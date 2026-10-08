@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+
+}
+
+main {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 10px;
+    font-family: sans-serif;
+    background-color: rgb(179, 155, 123);
+}
+
+h2 {
+    grid-column: 4/7;
+    grid-row: 1;
+    font-size: xx-large;
+    text-align: center;
+    color: rgb(13, 21, 166);
+}
+
+#erg1 {
+    grid-column: 4/5;
+    grid-row: 2;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#trenner {
+    grid-column: 5/6;
+    grid-row: 2;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#erg2 {
+    grid-column: 6/7;
+    grid-row: 2;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#sp1 {
+    grid-column: 1/4;
+    grid-row: 2/7;
+}
+
+#sp2 {
+    grid-column: 7/10;
+    grid-row: 2/7;
+}
+
+#sp1,
+#sp2 {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    background-color: rgb(127, 187, 255);
+}
+
+#scher {
+    grid-column: 4/5;
+    grid-row: 4;
+
+}
+
+#schtei {
+    grid-column: 5/6;
+    grid-row: 4;
+}
+
+#papie {
+    grid-column: 6/7;
+    grid-row: 4;
+}
+
+#scher,
+#schtei,
+#papie {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#scher:hover,
+#schtei:hover,
+#papie:hover {
+    transform: scale(1.1);
+}
+
+#info {
+    grid-column: 4/7;
+    grid-row: 6;
+    text-align: center;
+    font-size: x-large;
+    color: rgb(20, 56, 156);
+}
+
+#neu {
+    grid-column: 4/7;
+    grid-row: 7;
+    font-size: large;
+    cursor: pointer;
+}
+
+#usertext1 {
+    grid-column: 1/4;
+    grid-row: 8;
+}
+
+#usertext2 {
+    grid-column: 7/10;
+    grid-row: 8;
+}
+
+#usertext1,
+#usertext2 {
+    border: 2px solid black;
+    height: 40px;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+}
