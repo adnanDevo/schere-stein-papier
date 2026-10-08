@@ -95,7 +95,7 @@ function zuruecksetzen() {
     aitex.style.backgroundColor = ""
     user = ""
     ai = ""
-    schere.addEventListener("click", klickenSchere)
-    papier.addEventListener("click", klickenPapier)
-    stein.addEventListener("click", klickenStein)
+    schere.addEventListener("click", klicken)
+    papier.addEventListener("click", klicken1)
+    stein.addEventListener("click", klicken2)
 }
