@@ -17,10 +17,10 @@ function klicken() {
     if (ai == "Schere") {
         info.textContent = "keine Punkte"
     } else if (ai == "Papier") {
-        info.textContent = "ein Punkt für User"
+        info.textContent = "ein Punkt für Goku"
         erge1.textContent = Number(erge1.textContent) + 1
     } else {
-        info.textContent = "ein Punkt für Sayanjin AI"
+        info.textContent = "ein Punkt für Vegeta"
         erge2.textContent = Number(erge2.textContent) + 1
     }
     gewinnerPruefen()
@@ -33,10 +33,10 @@ function klicken1() {
     if (ai == "Papier") {
         info.textContent = "keine Punkte"
     } else if (ai == "Stein") {
-        info.textContent = "ein Punkt für User"
+        info.textContent = "ein Punkt für Goku"
         erge1.textContent = Number(erge1.textContent) + 1
     } else {
-        info.textContent = "ein Punkt für Sayanjin AI"
+        info.textContent = "ein Punkt für Vegeta"
         erge2.textContent = Number(erge2.textContent) + 1
     }
     gewinnerPruefen()
@@ -48,10 +48,10 @@ function klicken2() {
     if (ai == "Stein") {
         info.textContent = "keine Punkte"
     } else if (ai == "Schere") {
-        info.textContent = "ein Punkt für User"
+        info.textContent = "ein Punkt für Goku"
         erge1.textContent = Number(erge1.textContent) + 1
     } else {
-        info.textContent = "ein Punkt für Sayanjin AI"
+        info.textContent = "ein Punkt für Vegeta"
         erge2.textContent = Number(erge2.textContent) + 1
     }
     gewinnerPruefen()
@@ -69,14 +69,14 @@ function aiwahl() {
 }
 function gewinnerPruefen() {
     if (erge1.textContent == 3) {
-        info.textContent = "User gewinnt 🏅 "
+        info.textContent = "Goku gewinnt 🏅"
         usertex.style.backgroundColor = "green"
         schere.removeEventListener("click", klicken)
         papier.removeEventListener("click", klicken1)
         stein.removeEventListener("click", klicken2)
 
     } else if (erge2.textContent == 3) {
-        info.textContent = "Sayanjin AI gewinnt 😢 "
+        info.textContent = "Vegeta gewinnt 😢"
         aitex.style.backgroundColor = "green"
         schere.removeEventListener("click", klicken)
         papier.removeEventListener("click", klicken1)
